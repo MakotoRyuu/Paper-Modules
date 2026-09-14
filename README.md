@@ -24,9 +24,6 @@ research-modules/
 ├── docs/                     # 设计规范与维护文档
 ├── tests/                    # 仓库级集成测试
 ├── .github/                  # Issue 和 Pull Request 模板
-├── CONTRIBUTING.md
-├── MODULE_TEMPLATE.md
-├── CITATION.cff
 ├── LICENSE
 └── README.md
 ```
@@ -63,25 +60,6 @@ module-name/
 └── LICENSE             # 与主仓库不同或有额外要求时提供
 ```
 
-## 模块成熟度
-
-模块 README 顶部应标注以下状态之一：
-
-- `experimental`：探索阶段，接口可能变化。
-- `stable`：接口稳定，有测试与使用记录。
-- `deprecated`：不建议新项目使用，并说明替代方案。
-
-## 收录标准
-
-一个模块适合进入本仓库，当且仅当它：
-
-- 解决一个边界清楚、可重复出现的科研问题；
-- 不依赖贡献者本机的私有路径、账号或未公开数据；
-- 提供一条可验证的最小使用路径；
-- 对外部数据、模型、代码和算法给出来源及许可证说明；
-- 不把大型项目整体复制进来。
-
-详细要求见 [CONTRIBUTING.md](CONTRIBUTING.md)，创建模块时可复制 [MODULE_TEMPLATE.md](MODULE_TEMPLATE.md)。
 
 ## 安全与研究诚信
 
@@ -97,15 +75,3 @@ module-name/
 - [ ] 自动生成模块索引
 - [ ] 增加跨语言模块规范
 - [ ] 发布首个带 DOI 的版本
-
-## 贡献
-
-欢迎提交新模块、测试、示例和文档改进。请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md)，新模块建议先创建 Feature Request 说明使用场景，避免功能重叠。
-
-## 引用
-
-如果本仓库对你的研究有帮助，请使用仓库中的 `CITATION.cff`。使用具体模块时，也请同时引用模块 README 中列出的原始论文、数据集和实现。
-
-## 许可证
-
-本仓库默认采用 [MIT License](LICENSE)。单个模块如使用不同许可证，必须在其目录中明确说明；第三方数据与模型仍受各自许可证约束。
